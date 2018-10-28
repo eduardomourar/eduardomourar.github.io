@@ -1,0 +1,20 @@
+---
+layout: default
+title: Eduardo Rodrigues
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Interesting Open Source Projects</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/jekyll/jekyll/">Jekyll:</a> A simple, blog aware, static site generator (used for this site).</li>
+    <li><a href="http://semver.org">Semantic Versioning:</a> A meaningful method for incrementing version numbers.</li>
+    <li><a href="https://serverless.com/">Serverless Framework:</a> Build more, manage less. Serverless lets you focus on driving business value.</li>
+  </ul>
+</div>
